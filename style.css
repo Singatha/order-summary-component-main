@@ -1,0 +1,146 @@
+:root {
+    --ff: "Red Hat Display";
+    --fs: 16px;
+    --fw-500: 500;
+    --fw-700: 700;
+    --fw-900: 900;
+
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-image: url('./images/pattern-background-desktop.svg');
+    background-color: var(--pale-blue);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+}
+
+.container {
+    background-color: var(--white);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    max-width: 380px;
+    width: 100%;
+    margin: 0 auto 0 auto;
+    position: relative;
+    top: 6%;
+}
+
+img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.header {
+    font-size: 20px;
+    font-family: var(--ff);
+    font-weight: var(--fw-900);
+    text-align: center;
+    margin: 30px 0 20px 0;
+}
+
+.text {
+    color: var(--desaturated-blue);
+    font-size: var(--fs);
+    font-family: var(--ff);
+    font-weight: var(--fw-500);
+    width: 260px;
+    text-align: center;
+    margin: 0 auto 30px auto;
+}
+
+.sub-plan {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.bold {
+    font-weight: var(--fw-700);
+}
+
+.price {
+    color: var(--desaturated-blue);
+}
+
+.sub-plan div {
+    margin: 0 50px 0 20px;
+}
+
+.sub-plan p {
+    font-family: var(--ff);
+    font-size: var(--fs);
+    margin: 0;
+}
+
+.sub-plan a {
+    color: var(--bright-blue);
+    font-size: var(--fs);
+    font-family: var(--ff);
+    font-weight: var(--fw-500);
+    margin-left: 15px;
+}
+
+.sub-plan a:hover {
+    text-decoration: none;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.buttons button {
+    border: none;
+    border-radius: 8px;
+    font-family: var(--ff);
+    font-size: var(--fs);
+    padding: 15px;
+    width: 320px;
+    margin: 0 auto 10px auto;
+}
+
+.purple {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    font-weight: var(--fw-700);
+}
+
+.purple:hover {
+    background-color: var(--bright-blue);
+}
+
+.pale {
+    background-color: unset;
+    color: var(--desaturated-blue);
+    font-weight: var(--fw-700);
+}
+
+.pale:hover {
+    color: var(--black);
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        background-image: url('./images/pattern-background-mobile.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
