@@ -37,7 +37,7 @@ body {
     width: 100%;
     margin: 0 auto 0 auto;
     position: relative;
-    top: 6%;
+    top: 10%;
 }
 
 img {
@@ -93,7 +93,7 @@ img {
     color: var(--bright-blue);
     font-size: var(--fs);
     font-family: var(--ff);
-    font-weight: var(--fw-500);
+    font-weight: var(--fw-700);
     margin-left: 15px;
 }
 
