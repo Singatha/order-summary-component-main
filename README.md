@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Challenge Screenshot](./order-summary-component.png)
+![Challenge Screenshot](./order-summary-component-screenshot.png)
 
 
 ### Links
