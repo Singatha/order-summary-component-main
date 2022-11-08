@@ -10,26 +10,26 @@
   <title>Frontend Mentor | Order summary card</title>
 </head>
 <body>
-  <main class="container">
-    <img class="hero-img" src="./images/illustration-hero.svg" alt="A person listenning to music">
-    <h1>Order Summary</h1>
-    <p class="text">
+  <main class="order-component">order-component
+    <img class="order-component__img" src="./images/illustration-hero.svg" alt="A person listenning to music">
+    <h1 class="order-component__title">Order Summary</h1>
+    <p class="order-component__text">
       You can now listen to millions of songs, audiobooks, and podcasts on any 
       device anywhere you like!
     </p>
-    <section class="sub-plan">
-      <img src="./images/icon-music.svg" alt="Music icon">
-      <div>
-        <p class="bold">Annual Plan</p>
-        <p class="price">$59.99/year</p>
+    <section class="order-component__sub-plan">
+      <img class="order-component__sub-plan__img" src="./images/icon-music.svg" alt="Music icon">
+      <div class="order-component__sub-plan__body">
+        <p class="order-component__sub-plan__text order-component__sub-plan--bold">Annual Plan</p>
+        <p class="order-component__sub-plan__text order-component__sub-plan--price">$59.99/year</p>
       </div>
-      <a href="#">Change</a>
+      <a class="order-component__sub-plan__link" href="#">Change</a>
     </section>
-    <section class="buttons">
-      <button class="purple">
+    <section class="order-component__btns">
+      <button class="order-component__btn order-component__btn--purple">
         Proceed to Payment
       </button>
-      <button class="pale">
+      <button class="order-component__btn order-component__btn--pale">
         Cancel Order
       </button>
     </section>
