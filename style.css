@@ -22,8 +22,8 @@ html, body {
 
 body {
     align-items: center;
-    background-image: url('./images/pattern-background-desktop.svg');
     background-color: var(--pale-blue);
+    background-image: url('./images/pattern-background-desktop.svg');
     background-repeat: no-repeat;
     background-size: contain;
     display: flex;
@@ -31,109 +31,109 @@ body {
     justify-content: center;
 }
 
-.container {
+.order-component {
     background-color: var(--white);
     border-radius: 10px;
+    margin: 0 auto;
     max-width: 380px;
     width: 100%;
-    margin: 0 auto;
 }
 
-.hero-img {
+.order-component__img {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     max-width: 380px;
     width: 100%;
 }
 
-h1 {
-    font-size: 20px;
+.order-component__title {
     font-family: var(--ff);
+    font-size: 20px;
     margin: 25px 0 15px;
     text-align: center;
 }
 
-.text {
+.order-component__text {
     color: var(--desaturated-blue);
     font-size: var(--fs);
     font-family: var(--ff);
     font-weight: var(--fw-500);
+    margin: 0 auto 20px;
     width: 260px;
     text-align: center;
-    margin: 0 auto 20px;
 }
 
-.sub-plan {
+.order-component__sub-plan {
+    align-items: center;
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
     margin-bottom: 30px;
 }
 
-.bold {
-    font-weight: var(--fw-700);
-}
-
-.price {
-    color: var(--desaturated-blue);
-}
-
-.sub-plan div {
+.order-component__sub-plan__body {
     margin: 0 50px 0 20px;
 }
 
-.sub-plan p {
+.order-component__sub-plan--bold {
+    font-weight: var(--fw-700);
+}
+
+.order-component__sub-plan--price {
+    color: var(--desaturated-blue);
+}
+
+.order-component__sub-plan__text {
     font-family: var(--ff);
     font-size: var(--fs);
     margin: 0;
 }
 
-.sub-plan a {
+.order-component__sub-plan__link {
     color: var(--bright-blue);
-    font-size: var(--fs);
     font-family: var(--ff);
+    font-size: var(--fs);
     font-weight: var(--fw-700);
     margin-left: 15px;
 }
 
-.sub-plan a:hover {
+.order-component__sub-plan__link:hover {
     text-decoration: none;
 }
 
-.buttons {
+.order-component__btns {
     display: flex;
     flex-direction: column;
     margin-bottom: 15px;
 }
 
-.buttons button {
+.order-component__btn {
     border: none;
     border-radius: 8px;
     font-family: var(--ff);
     font-size: var(--fs);
+    margin: 0 auto 10px;
     padding: 15px;
     width: 320px;
-    margin: 0 auto 10px;
 }
 
-.purple {
+.order-component__btn--purple {
     background-color: var(--dark-blue);
     color: var(--white);
     font-weight: var(--fw-700);
 }
 
-.purple:hover {
+.order-component__btn--purple:hover {
     background-color: var(--bright-blue);
 }
 
-.pale {
+.order-component__btn--pale {
     background-color: unset;
     color: var(--desaturated-blue);
     font-weight: var(--fw-700);
 }
 
-.pale:hover {
+.order-component__btn--pale:hover {
     color: var(--black);
 }
 
@@ -144,7 +144,7 @@ h1 {
         background-size: contain;
     }
 
-    .buttons button {
+    .order-component__btn {
         width: 280px;
     }
 }
